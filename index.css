@@ -1,0 +1,310 @@
+﻿body {
+  margin: 0;
+  font-family: Ubuntu, Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 1.4rem;
+  font-weight: 300;
+  line-height: 1.5;
+  color: #212529;
+  text-align: left;
+  background-color: #fff;
+}
+
+html {
+  font-family: sans-serif;
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+  height: 100%;
+}
+
+#bandereau {
+  margin-top: 1px;
+}
+
+.haut {
+  color: #512472;
+  text-decoration: none;
+  background-color: #f8f9fa;
+  display: flex;
+  margin-left: 5px;
+  margin-right: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.haut1 {
+  width: 15%;
+  float: left;
+}
+
+.haut2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 25%;
+  float: left;
+}
+
+.haut3 {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.haut4 {
+  display: flex;
+  justify-content: center;
+  width: 20%;
+  float: left;
+}
+
+.haut5 {
+  width: 20%;
+  float: left;
+}
+
+.favoris {
+  display: flex;
+  justify-content: space-between;
+  margin-top: -15px;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+.principale {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.corps {
+  margin-top: -400px;
+  margin-bottom: 0px;
+  width: 91.5%;
+  height: 100%;
+  size: 100%;
+  float: right;
+  margin-left: 5px;
+}
+
+.frame {
+  min-height: 175vh;
+}
+
+.div2 {
+  width: 100%;
+  height: 64px;
+  margin-left: 5px;
+  border: 1px solid #000;
+  border-radius: 17px;
+}
+
+.main1 {
+  display: -webkit-flex;
+  -webkit-align-items: center;
+  display: flex;
+  align-items: center;
+}
+
+.main1 div {
+  -webkit-flex: 1;
+  flex: 1;
+}
+
+/* The Modal (background) */
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  padding-top: 10px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: #CBC3E3;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* MENU VERTICAL */
+
+.li1 {
+  float: none
+}
+
+.a1 {
+  width: 100%;
+  height: 60px;
+}
+
+/* CSS W3 */
+
+/* W3.CSS 4.10 February 2018 by Jan Egil and Borge Refsnes */
+
+html {
+  box-sizing: border-box
+}
+
+*, *:before, *:after {
+  box-sizing: inherit
+}
+
+/* Extract from normalize.css by Nicolas Gallagher and Jonathan Neal git.io/normalize */
+
+html {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+article, aside, details, figcaption, figure, header, main, menu, p, nav, section, summary {
+  color: #512472;
+}
+
+a {
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects
+}
+
+a:active, a:hover {
+  outline-width: 0
+}
+
+img {
+  border-style: none
+}
+
+.img1 {
+  width: 60px;
+  height: 60px;
+}
+
+button, input, select, textarea {
+  font: inherit;
+  margin: 0
+}
+
+button, input {
+  overflow: visible
+}
+
+button, select {
+  text-transform: none
+}
+
+button, html [type=button], [type=reset], [type=submit] {
+  -webkit-appearance: button
+}
+
+/* End extract */
+
+html, body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  line-height: 1.5
+}
+
+html {
+  overflow-x: hidden
+}
+
+img {
+  vertical-align: middle
+}
+
+a {
+  color: inherit
+}
+
+.w3-btn, .w3-button {
+  border: none;
+  display: inline-block;
+  padding: 8px 5px;
+  vertical-align: middle;
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+  background-color: inherit;
+  text-align: center;
+  cursor: pointer;
+  white-space: nowrap
+}
+
+.w3-btn, .w3-button {
+  height: auto;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none
+}
+
+.w3-modal {
+  z-index: 3;
+  display: none;
+  padding-top: 100px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4)
+}
+
+.w3-container:after, .w3-container:before, .w3-panel:after, .w3-panel:before, .w3-row:after, .w3-row:before, .w3-row-padding:after, .w3-row-padding:before, .w3-cell-row:before, .w3-cell-row:after, .w3-clear:after, .w3-clear:before, .w3-bar:before, .w3-bar:after {
+  content: "";
+  display: table;
+  clear: both
+}
+
+@media (max-width:600px) {
+  .w3-modal {
+    padding-top: 30px
+  }
+}
+
+@media (max-width:768px) {
+  .w3-modal {
+    padding-top: 50px;
+  }
+}
+
+.w3-round, .w3-round-medium {
+  border-radius: 4px
+}
+
+.w3-round-large {
+  border-radius: 8px
+}
+
+.w3-round-xlarge {
+  border-radius: 16px
+}
+
+.w3-container, .w3-panel {
+  padding: 0.01em 5px
+}
+
+.w3-panel {
+  margin-top: 3px;
+  margin-bottom: 3px;
+  margin-right: 5px
+}
+
+.w3-border {
+  border: 1px solid #ccc!important
+}
+
+/* fin w3.css */
+
+.w3-teal, .w3-hover-teal:hover {
+  color: #512472!important;
+  background-color: #CBC3E3!important
+}
