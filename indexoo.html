@@ -1,466 +1,52 @@
-<!DOCTYPE html>
+
+ <! DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 
-<head>
+<tête>
+	<META http-EQUIV="Refresh » CONTENT="Temps; url=file://fsbfcact/Activites/BFC%20ESP%20VERSION%20MYSYS%20ACT/MySys_Recette%20en%20caisse%20UTI/">
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<META HTTP-EQUIV="Refresh" CONTENT="1800; URL=index.html">
+	<meta name="viewport » content="width=device-width, initial-scale=1">
+	<META HTTP-EQUIV="Actualiser » CONTENT="1800; URL=index.html">
 
-	<title>CEBFC - DTTI/Service MOA Projet</title>
+	<titre>CEBFC - Projet de MOA DTTI/Service</titre>
 
-	<!-- CSS personnel = style.css -->
-	<link rel="stylesheet" href="index.css" type="text/css">
-	<link href="style.css" rel="stylesheet" type="text/css" />
+	<!-- CSS = style.css -->
+	<link rel="stylesheet » href="index.css » type="text/css">
+	<link href="style.css » rel="stylesheet » type="text/css" />
 
 	<!-- Feuille de style contenant les icônes afin de les visualiser -->
-	<!-- Site Internet icone https://fontawesome.com/v5.15/icons?d=gallery&p=2&m=free -->
+	<!-- site Internet icone https://fontawesome.com/v5.15/icons?d=gallery&p=2&m=free -->
 
 
-	<script src="https://kit.fontawesome.com/91977d47b1.js" crossorigin="anonymous"></script>
-	<script src="VersionDuNavigateur.js" crossorigin=""></script>
-	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<script src="https://kit.fontawesome.com/91977d47b1.js » crossorigin="anonymous"></script>
+	<script src="VersionDuNavigateur.js » crossorigin=""></script>
+	<link rel="feuille de style » href="https://www.w3schools.com/w3css/4/w3.css">
 
 
-</head>
+</tête>
 
-<body>
-	<script>
-		if ((navigator.userAgent.indexOf('Edg') >= 0) || (navigator.userAgent.indexOf('MSIE ') > 0) || (navigator.userAgent.indexOf('Trident/') > 0)){
-    		/* ...code for Edge.... */
-		}else {
-    		alert("Votre navigateur n'est pas compatible avec ce site. Veuillez utiliser Microsoft Edge pour bénéficier de toutes les fonctionnalités.");
-		}
-	</script>
-	<!-- Haut de page -->
-	<div id="bandereau" class="haut w3-panel w3-border w3-round-large" border=1>
-		<div class="haut1">
-			<a class="w3-button w3-round-large w3-deep-purple" style="float:left; margin-top:5px" href="DTTI.html" target="">
-				<font style="vertical-align: inherit; font-size:large; font-family:Arial, Helvetica, sans-serif">Portail MOA projet</font>
-			</a>
-			<a class="w3-panel w3-border w3-round-large" style="clear: both; font-size:x-small; text-decoration: none; float:left" onMouseOver="this.style.cursor='pointer'"
-			 onclick="document.getElementById('New').style.display='block'">!Nouveautés!</a>
-		</div>
-		<!-- Affichage décompte des versions -->
-		<div class="haut2">
-			<div style="text-align: left; font-size:small" id="compte_a_rebours0"> 
-			</div>
-			<div style="text-align: left; font-size:small" id="compte_a_rebours">
-			</div>
-
-		</div>
-		<div class="haut3" style="height: 44px" border=40px>
-			<a class="w3-panel w3-border w3-round-large" style="float: center; text-decoration: none"; color:white" target="_blanck" href="http://w28iis.cebfc.caisse-epargne.fr/pmadison/DTTI/MOA/portail/Documents/PlanningVersions2022.pdf">Planning Version 2022</a> 
-			<!--a class="w3-panel w3-border w3-round-large" style="float: center; text-decoration: none" target="internet" href="http://service-itce-sps.sigce.caisse-epargne.fr/sites/ref-solv/version/_layouts/15/WopiFrame2.aspx?sourcedoc=/sites/ref-solv/version/References/Planning%20directeur/Planning%20MEP%20MYS%202021V2.pdf&action=default">Planning Version 2021</a-->
-		</div>
-		<div class="haut4">
-			<div class="main1">
-				<form method=get action=http://www.google.com/custom class="google_form" target="_blank">
-					<div class="main1">
-						<input type=text name=q placeholder="Vous cherchez..." maxlength="35" value="">
-						<input type="submit" value="Google" class="w3-border w3-round" style="margin-left:2px">
-						<input type=hidden name=domains value="">
-						<input type=hidden name=sitesearch value="" checked>
-						<input type=hidden name=meta value="lr=lang_fr">
-					</div>
-				</form>
-			</div>
-		</div>
-		<div class="haut5">
-			<button id="equipe" style="margin-top:5px; float:right; color:#FFFFFF; font-size:large;  font-family:Arial, Helvetica, sans-serif"
-			 class="w3-button w3-round-large w3-deep-purple">L'equipe MOA Projet</button>
-			<a class="w3-panel w3-border w3-round-large" style="clear: both; font-size:x-small; text-decoration: none; float:right" onMouseOver="this.style.cursor='pointer'"
-			 onclick="document.getElementById('pourquoi').style.display='block'">Pourquoi la MOA?</a>
-		</div>
-		<!-- debut fenetre pourquoi MOA -->
-		<div id="pourquoi" class="w3-modal">
-			<div class="w3-modal-content w3-animate-zoom w3-card-4">
-				<header class="w3-container w3-deep-purple">
-					<span onclick="document.getElementById('pourquoi').style.display='none'" class="w3-button w3-display-topright" style="margin-right:10px">&times;</span>
-					<h2>Pourquoi venir à la MOA projet?</h2>
-				</header>
-				<div class="w3-container" style="color:black">
-					<p>Vous avez de la bonne humeur à échanger, ce service est fait pour vous...</p>
-					<p style="text-align:left"> Les qualités requises pour intégrer ce service sont :<br/> - La Bienveillance<br /> - La Collaboration<br /> - La Confiance<br
-						/> - et supporter l'insupportable .....</p>
-					<p style="text-align:left">Ce service a pour mission de participer à des projets nationaux à fort enjeu pour la caisse.</p>
-					<p style="text-align:left">Notre implication dans ses projets permet :<br /> - de contribuer au Plan Annuel Informatique en termes de ressources
-						(nombre de jours de contribution à réaliser par année).<br/> - d'être acteur au sein du projet soit en tant qu’expert
-						ou de Chefferie de Projet et quel que soit la méthodologie du projet (Cycle en V, méthode AGILE, etc)<br /> - Participer
-						à la conduite du changement lors de la généralisation du projet dans la caisse avec le métier.</p>
-					<p style="text-align:left">Si vous souhaitez participer à cette aventure humaine, vous devez passer au forfait afin de travailler en total liberté
-						..:) et oui vous devez gérer votre emploi du temps.</p>
-					<p style="text-align:left">Attention ce n'est pas un gage de tranquillité car vous allez vous impliquer au maximum naturellement dans tous les
-						projets ...L'envie de travailler devient un réel plaisir à consommer sans modération ...:)</p>
-				</div>
-			</div>
-		</div>
-		<!-- fin fenetre pourquoi moa -->
-		<!-- debut fenetre Nouveautés -->
-		<div id="New" class="w3-modal">
-			<div onMouseOver="this.style.cursor='pointer'" class="w3-modal-content w3-animate-zoom w3-card-4">
-				<header class="w3-container w3-deep-purple">
-					<span onclick="document.getElementById('New').style.display='none'" class="w3-button w3-display-topright" style="margin-right:10px;">&times;</span>
-					<h2>Nouveautés de la version 5.4 en date du 22/04/2022</h2>
-				</header>
-				<div class="w3-container" style="color:black">
-					<p style="text-align:left">
-					Mise à jour des versions <br>
-					</p>
-				</div>
-			</div>
-		</div>
-
-		<!-- debut fenetre l'equipe MOA -->
-		<div id="Monequipe" class="modal">
-			<div class="w3-modal-content w3-animate-zoom w3-card-4">
-				<header class="w3-container w3-deep-purple">
-					<span style="float:right" class="close">&times;</span>
-					<h1>L'équipe MOA Projet</h1>
-					<p style="color:white;">Les objectifs : Contribuer au PIA / Accompagner au déploiement en CEBFC</p>
-				</header>
-				<div class="modal-content1">
-					<div class="modal-content2">
-						<div class="carte1">
-							<div class="w3-card-4" style="height:100%;">
-								<header class="w3-container w3-deep-purple">
-									<h3>Laurent JACOTOT</h3>
-								</header>
-								<div class="w3-container" style="color:black">
-									<p><img src="photos\LJ.jpg" alt="" style="" class="img1"></p>
-									<p style="">Le responsable du service MOA assure:</p>
-									<p style="text-decoration: underline">• L'accompagnement des directions sur les évolutions apportées par les projets: </p>
-									<p style="font-size:small; text-align:justify">
-										- Élaboration des plannings de déploiement avec le métier.<br /> - Présentation des projets aux interlocuteurs
-										des directions impliquées.<br /> - Participation à la conduite du changement.<br />
-									</p>
-									<p style="text-decoration: underline">• Des projets en cours sur 2022:</p>
-									<p style="font-size:small; text-align:justify">
-										- Suivi du déploiement du programme portail et Synthèse avec Bruno B. et Martine M.<br /> 
-										- Accompagnement sur la partie Prescription ( API et Extranet ) avec Rémi. <br /> 
-										- Différentes actions en cours sur des sujets tel que le suivi Suite PRO-G, mise à jour du site MOA, etc
-									</p>
-									<p style="text-decoration: underline">• Le pilotage et suivi de l'activité du service. </p>
-									<p style="text-decoration: underline">• Accompagnement des collaborateurs dans les projets, et accompagnement des nouveaux collaobrateurs qui arrivent dans l'équipe Bienvenue à Valérie :</p>
-									<p style="font-size:small; text-align:justify">
-										- En étroite collaboration avec les collaborateurs, nous définissons leurs participations dans les projets les plus intéressants
-										pour l'entreprise en respectant les règles définient par ITCE (appatenance aux CMTD de référence de
-										la caisse et la séniorité suivant les fonctions) .<br />
-
-								</div>
-							</div>
-						</div>
-					</div>		
-					<div class="carte1">
-							<div class="w3-card-4" style="height:100%;">
-								<header class="w3-container w3-deep-purple">
-									<h3>Bruno BOURGEOIS-REPUBLIQUE</h3>
-								</header>
-								<div class="w3-container" style="color:black">
-									<p><img src="photos\BBR.jpg" alt="" style="" class="img1">
-										<p style="text-decoration: underline">Domaines de prédilection :</p>
-										<p style="font-size:small; text-align:justify">
-											- Domaine Bancarisation BDD<br /> - Domaine Epargne BDD et BDR<br /> - Domaine Digital<br />
-										</p>
-										<p style="text-decoration: underline"> Product Owner Produit Assurances Non Vie : </p>
-										<p style="font-size:small"; text-align:justify">• Principales Missions : <br /></p>
-										<p style="font-size:small; text-align:justify">
-											&nbsp &nbsp - Représentant du produit "Assurance Non Vie", le PO produit est responsable du contenu du produit et priorise les fonctionnalités en fonction de leur valeur utilisateur. <br /> 
-											&nbsp &nbsp - Intégré à l'organisation de l'équipe IT, le PO produit sera à l'écoute tout autant des métiers que de l'IT. A ce titre, il apporte les réponses à l’IT après avoir collecté les retours utilisateurs tant sur des sujets de RUN que de BUILD.<br /> 
-											&nbsp &nbsp - Il orchestre les phases de tests et recettes et intervient activement dans le processus de déploiement des fonctionnalités. <br /> 
-											&nbsp &nbsp - Il est garant de la documentation utilisateur du produit. <br /> 
-											&nbsp &nbsp - Il communique avec les établissements sur les changements et incidents. <br /> 
-											&nbsp &nbsp - Il suit la santé du produit à travers des KPI. <br /> 
-											<p style="font-size:small"; text-align:justify">• ITCE intervient en tant que distributeur auprès des établissements MySys des solutions de BPCE Assurances. <br /> 
-											<p style="font-size:small"; text-align:justify">• Le périmètre du produit couvre les assurances des particuliers (IARD, santé individuelle et parabancaires) ainsi que les assurances des professionnels (IARD Pro, santé collective et parabancaires).<br /> 
-										</p>
-										<p style="text-decoration: underline"> Projets 2021 :</p>
-										<p style="font-size:small; text-align:justify">
-											- Projet Offre AUTO 5 : poste conseiller et Selfcare <br />
-											- Projet Offre MRH4 en selfcare <br />
-											- Projet Ventes Combinées : chainage vers la souscription de PJ3 (Protection Juridique) et GAV (Garantie des Accidents de la Vie) lors de la souscription d’une assurance habitation MRH4 <br />
-										</p>
-										<p style="text-decoration: underline"> Projets 2022 :</p>
-										<p style="font-size:small; text-align:justify">
-											- en attente de validation des feuilles de route <br />
-										</p>
-										<p style="text-decoration: underline">
-											Accompagnement au changement en CEBFC</p>
-										<p style="font-size:small; text-align:justify">
-										- Projet Programme Portail Synthèse Particuliers : déploiement sur 2021/2022 pour la BDD et le remplacement du PCM pour l’ensemble des collaborateurs 
-										<br />
-										</p>
-										<p style="text-decoration: underline">
-											Participation au CUT « Communauté des Utilisateurs » Epargne 
-										</p>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="modal-content2">
-						<div class="carte1">
-							<div class="w3-card-4" style="height:100%;">
-								<header class="w3-container w3-deep-purple">
-									<h3>Bruno ANGELINI </h3>
-								</header>
-								<div class="w3-container" style="color:black">
-									<p><img src="photos\BA.png" alt="" style="" class="img1">
-										<p style="text-decoration: underline">Domaines de prédilection :</p>
-										<p style="font-size:small; text-align:justify">
-											- Gamme des produits marché des particuliers <br /> - Tarification bancaire <br /> - Outils de gestion de la relation 
-											client <br /> - Outils d’accompagnement à la montée en compétence du réseau <br />
-										</p>
-										<p style="text-decoration: underline">Projets en 2022 :</p>
-										<p style="font-size:small; text-align:justify">
-											<p style="text-decoration: underline">PO Délégué sur 2 projets concernant la Connaissance Client Part  :</p>
-											<p style="font-size:small; text-align:justify">					
-												- Arrimage de la brique RLC (Reconnaissance, Lecture, Contrôle des documents) : déploiement d'un outil de reconnaissance des documents et des informations.
-													Refonte du parcours adresse <br />
-												- Entrée En Relation Digitale : <br />
-													Un parcours accessible pour ouvrir un compte en tout autonomie à partir du portail commercial ou suite à un premier contact avec un conseiller.<br />
- 
-											</p>
-											<p style="text-decoration: underline">
-												Accompagnement au changement en CEBFC</p>
-											<p style="font-size:small; text-align:justify">
-												- Aide au déploiement et à l’appropriation des nouveaux outils contacts clients <br />
-												- Entrée En Relation Digitale
-								</div>
-							</div>
-						</div>
-												<div class="carte1">
-						<div class="modal-content2">
-							<div class="w3-card-4" style="width:100%;">
-								<header class="w3-container w3-deep-purple">
-									<h3>Florence DODANE</h3>
-								</header>
-								<div class="w3-container" style="color:black">
-									<p><img src="photos\FD1.jpg" alt="" style="" class="img1"></p>
-									<p style="font-size:small; text-align:justify">
-										J’ai rejoint l’équipe MOA-Projets en novembre 2017 après un parcours réseau sur les marchés des pros (BDD) et des entreprises (BDR) 
-										<p style="text-decoration: underline">Participation aux projets sur 2021 :</p>
-										<p style="font-size:small; text-align:justify">
-											- MyFlow : Product Owner Délégué MyFlow – Projets partenaires : Intégration de MyFlow en tant qu’Asset dans des projets ITCE. <br />
-											- MyM@il : Solution d’aide au traitement des mails clients dans Outlook : analyse instantanée de messages clients et proposition de modèles de réponses (déploiement T2 2021) <br />
-										</p>
-										<p style="text-decoration: underline">Projets en cours et continuité en 2022 :</p>
-	 									<p style="font-size:small; text-align:justify">
-											PMO Deploy sur le projet DEEP PURPLE PRO EI (Caisses et Banques) - les espaces clients web et mobile pour la clientèle des EI. <br />
-											Ma mission : accompagner au déploiement de l'évolution des espaces clients de Banque à distance pour les EI dans les 2 réseaux CE et BP :  <br /> 
-											- Applications "Banxo" et "Banque Populaire" <br />
-											- Espaces clients Web : "DEI part/DEI pro" et "CyberPlus Part" <br />
-										</p>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="modal-content2">
-						<div class="carte1">
-							<div class="w3-card-4" style="height:100%;">
-								<header class="w3-container w3-deep-purple">
-									<h3>Martine MANGIN</h3>
-								</header>
-								<div class="w3-container" style="color:black">
-									<p><img src="photos\MM.jpg" alt="" style="" class="img1"></p>
-									<p style="text-decoration: underline">Domaines de prédilection :</p>
-									<p style="font-size:small; text-align:justify">
-										- Domaines Professionnel & BDR.<br /> - Domaines Crédits.<br /> - Domaine Digital.
-										<br />
-										<br />
-									</p>
-									<p style="text-decoration: underline">Projets du moment :</p>
-									<p style="font-size:small; text-align:justify">
-									POD sur le projet Espace de partage Digital Share au sein du produit Gestion de la Relation Commerciale PRO & BDR : <br />
-									Espace de collecte de documents pour les PRO et la BDR, cet espace permet la collecte de documents en toute sécurité via la Banque en ligne. <br />
-									Actuellement, cet espace est associé au TOP CC PRO BDR. <br />
-
-									</p>
-									<p style="text-decoration: underline">Projets à venir en 2022 :</p>
-									<p style="font-size:small; text-align:justify">
-										• Continuité sur Espace de partage Digital Share. <br />
-										Il sera associé au DNC PRO BDR, au futur espace PIM (Professionnels de l'Immobilier), à EasyNet (Banque en ligne "allégée" pour les Entrées en relation Personnes Morales).<br /> 
-									</p>
-									<p style="text-decoration: underline">Accompagnement au changement en CEBFC</p>
-									<p style="font-size:small; text-align:justify">
-										- Programme Portail Synthèses : déploiement 2022 pour l'ensemble des Collaborateurs CEBFC. Accompagnement auprès du BO 
-
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="carte1">
-							<div class="w3-card-4" style="width:100%;">
-								<header class="w3-container w3-deep-purple">
-									<h3>Patricia LE BAIL</h3>
-								</header>
-								<div class="w3-container" style="color:black">
-									<p><img src="photos\PLB.png" alt="" style="" class="img1"></p>
-									<p style="font-size:small; text-align:justify">
-										3 ans d'expérience au seins de l'équipe du service MOA de la DTTI.</p>
-									<p style="text-decoration: underline">Domaines de prédilection :</p>
-									<p style="font-size:small; text-align:justify">
-									- SED : Signature électronique intégrée Pro et BDR <br />
-									- Portail client : DEI Pro et CE Net <br />
-									- Digital : Espace de partage des documents Pro et BDR<br />
-									</p>
-
-									<p style="text-decoration: underline">Projets mis en production :</p>
-									<p style="font-size:small; text-align:justify">
-										- <b> Sign’it </b> : Proposer aux clients la signature électronique de documents et/ou contrats non gérés dans
-										le SI Mysys <br /> - <b>  E-Signature EPI  </b>: Proposer aux clients la signature électronique sur les offres
-										de Bancarisation aux clients Pro EI et PM des marchés BDD Pro et BDR (4 offres de bancarisation) <br /> - <b>  Sécur’Espa@ce </b>										: Mettre à disposition du client dans un espace sécurisé les documents signés électroniquement <br /> - <b>  Evolution DEI Pro et CE Net </b>:
-										Restituer le détail des opérations cartes par porteur avec les encours. Optimiser la gestion des destinataires
-										et proposer l’export des opérations <br />
-									</p>
-
-									<p style="text-decoration: underline">Projets mis en production en 2021  :</p>
-									<p style="font-size:small; text-align:justify">
-
-										- <b> Digital Box </b> : Mise à disposition des clients d'un espace partagé et sécurisé pour la consultation de leurs documents sur DEI et CE Net (extention du périmètre documentaire : avis et relevés d'effets) <br />
-										- <b> Digital Share </b>: Mis à disposition d’un Espace de partage de documents entre les chargés d'affaires et les clients Pro et BDR permettant la complétude des documents règlementaires qui composent le DRC  <br />
-										- <b> Sign’it </b>: Qualification et intégration automatique des documents en GED  <br />
-										- <b> E-Signature EPI </b>: Proposer aux clients la signature électronique sur les offres de Bancarisation aux clients Pro EI et PM des marchés BDD Pro et BDR (Procuration, produits SLR, carte hors offre) <br />
-										- <b> Sécur’Espa@ce </b>: Mettre à disposition du client dans un espace sécurisé les documents signés électroniquement <br />
-										- <b> Evolution DEI Pro et CE Net </b>: Duplication des habilitations et droits de signature. Consultation des soldes fusionnés et opérations carte <br />
-										- <b> Instant Payment </b>: Proposer auxclients Pro et BDR une offre de saisie des virements instantanés <br />
-									</p>
-									<p style="text-decoration: underline">Projets à venir en 2022 :</p>
-									<p style="font-size:small; text-align:justify">
-									- <b> Carte Corporate Groupe </b>  : Remplacement de la solution Amex de gestion des Cartes Global Affaires par l'Intégration de la solution en mode Saas d’HPS permettant la commercialisation d’une nouvelle offre Carte Corporate Groupe adaptée aux clients Pro et BDR.  <br /> 
-									- <b> E-Signature EPI Feuille de route 2022 </b> : Proposer la signature electronique lors de la souscription des CAT, des contrats monétiques, des Parts sociales, ...<br />
-									- <b> E-Signature Multi-dossiers Pro et BDR </b>  : Améliorer le process afin de proposer au client une signature unique des actes de vente <br />
-									- <b> Sign’it </b> : Multi-signataire <br />
-									</p>
-									<p style="text-decoration: underline"> Accompagnement au changement en CEBFC :</p>
-									<p style="font-size:small; text-align:justify">
-										- E-Signature EPI, Sign’it, Carte Corporate Groupe
-									</p>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="modal-content2">
-						<div class="carte1">
-							<div class="w3-card-4" style="height:100%;">
-								<header class="w3-container w3-deep-purple">
-									<h3>Eric DURON</h3>
-								</header>
-
-
-
-
-
-
-								<div class="w3-container" style="color:black">
-									<p><img src="photos\ED.png" alt="" style="" class="img1"></p>
-									<p style="text-decoration: underline">Domaines de prédilection :</p>
-									<p style="font-size:small; text-align:justify">
-										- Domaine Entreprise Numérique (Classeur Client, Plan de Classement, Signature électronique, E-document,…)<br />
-									</p>
-									<p style="text-decoration: underline">Projets mis en production dernièrement :</p>
-									<p style="font-size:small; text-align:justify">
-										- Reconnaissance du matériel (écran tactile en particulier) pour la signature électronique <br />
-										- Actions de remédiation : <br />
-											&nbsp &nbsp &nbsp &nbsp o	Fiabilisation des CSP (mineurs, retraités, militaires) <br />
-											&nbsp &nbsp &nbsp &nbsp o	Fiabilisation des DRC Entrepreneurs individuels <br />
-										- Harmonisation des Plans de Classement BDD et BDR  <br />
-										- Fiabilisation des classements des natures dans le PDC <br />
-										- Projets internes (Synapse, numérisation des dossiers de crédit désarchivés) <br />
-										- Signature électronique multi dossiers Particuliers <br />
-
-
-									</p>
-									<p style="text-decoration: underline">Projets du moment :</p>
-									<p style="font-size:small; text-align:justify">
-										- Automatisation des contrôles PRISCOP sur les documents numériques <br />
-										- Convergence Classeur Client, Plan de Classement et Dossiers Numériques <br />
-										- Archivage et suppression des documents numériques dans le cadre du projet ARCHYPEL (sort final) <br />
-										- Traçabilité et pilotage de l’acquisition des documents via smartnum <br />
-										- Homologation des versions sur le différents domaines (Classeur Client, Signature électronique, Poste de travail,… : non régression et intégration des nouveaux projets <br />
-									</p>
-									<p style="text-decoration: underline">Projets à venir en 2022</p>
-									<p style="font-size:small; text-align:justify">
-										- Poursuite du projet remédiation  <br />
-										- Poursuite du projet d’amélioration de E-document  <br />
-									</p>
-		
-										<p style="text-decoration: underline">
-											Accompagnement au changement en CEBFC</p>
-										<p style="font-size:small; text-align:justify">
-											- Suivi du paramétrage Entreprise Numérique : ACCN
-										</p>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="carte1">
-						<div class="modal-content2">
-							<div class="carte1">
-							<div class="w3-card-4" style="height:100%;">
-								<header class="w3-container w3-deep-purple">
-									<h3> Valérie CAULFUTY </h3>
-								</header>
-								<div class="w3-container" style="color:black">
-									<p><img src="photos\VC.png" alt="" style="" class="img1"></p>
-									<p style="font-size:small; text-align:justify">
-										Je rejoins l’équipe après plusieurs années à la BDD, à la BDR, aux RH et à l’Organisation.<br />
-									 Au total 22 ans anciennetés à la CEBFC.<br />
-									<p style="text-decoration: underline">Domaines de prédilection :</p>
-									<p style="font-size:small; text-align:justify">
-										- Domaine Crédit <br /> - Domaine Myflow 
-									</p>
-									<p style="text-decoration: underline">Projet du moment :</p>
-									<p style="font-size:small; text-align:justify">
-										- PMO Déploy sur le projet NAV 
-									</p>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="modal-content2">
-						<div class="carte1">
-							<header class="w3-container w3-deep-purple">
-								<h3>Rémi CLUZEL</h3>
-							</header>
-							<div class="w3-container" style="color:black">
-								<p><img src="photos\RC.jpg" alt="" style="" class="img1">
-									<p style="text-decoration: underline">Domaines de prédilection :</p>
-									<p style="font-size:small; text-align:justify">
-										- Domaine Crédit <br /> - Domaine Prescription <br /> - Domaine Digital<br />
-									</p>
-									<p style="text-decoration: underline">Projets à venir sur 2022 :</p>
-									<p style="font-size:small; text-align:justify">
-										- Prescription en tant que Product Owner Produit avec comme missions :<br /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-										Suivre la santé du produit avec une vision 360 Build et Run <br /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Porter
-										la vision produit en lien avec le métier <br /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Représenter les clients
-										(parties prenantes, métiers, clients finaux) <br /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Etre le garant du
-										produit et maximise sa valeur <br /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Etre garant de la cohérence métier
-										du produit <br />
-									</p>
-									<p style="text-decoration: underline">
-										Accompagnement au changement en CEBFC</p>
-									<p style="font-size:small; text-align:justify">
-										- Projet Prescription API : <br /> &nbsp;- Le but est de déployer les API (données et documents) pour les courtiers
-										qui possèdent leur propre Système Information. Ces fonctionnalités permettront d'alimenter directement le SI (MycrédImmo
-										et DNC) afin d'optimiser et sécuriser le process entre le courtier et la CEBFC. <br /> &nbsp;- Mise à disposition
-										d'extranet (Connect Immo) par le Groupe Caisse d'Epargne pour les courtiers ne possédant pas leur propre SI. <br />
-
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
+<corps>
+									       
+											       
+											       
+<br>
+	
+	
+	
+											       
+											       
+					
 
 		<!-- debut fenetre guichet et Liens utiles pour éxécuter des recettes-->
-		<div id="Utile" class="w3-modal">
+		<div id="Utile » class="w3-modal">
 			<div class="w3-modal-content w3-animate-zoom w3-card-4">
 				<header class="w3-container w3-deep-purple">
-					<span onclick="document.getElementById('Utile').style.display='none'" class="w3-button w3-display-topright" style="margin-right:10px">&times;</span>
+					<span onclick="document.getElementById('Utile').style.display='none' » class="w3-button w3-display-topright » style="margin-right:10px">&times; </portée>
 					<h2> Liste des guichets et des liens utiles pour éxécuter des recettes </h2>
-				</header>
-				<!--h1 align="center" style="text-decoration: underline">Guichets</h1-->
-				<p align="center">
-				<IMG SRC="images/Guichet.png" ALT="Liste des guichets" TITLE="Titre Guichet">
+				</en-tête>
+				<!--h1 align="center » style="text-decoration: underline">Guichets</h1-->
+				<p align="centre">
+				<IMG SRC="images/Guichet.png » ALT="Liste des guichets » TITLE="Titre Guichet">
 
 				<!--	CEBPL / 14445 333804 ou 358902
 					<br> CEHDF / 16275 5960100 ou 5960200
@@ -474,34 +60,34 @@
 					<br> SCF / 30051 4301011 ou 8270252
 					<br> BTP/ 30258 6,7, 11,13,15,16,17,18,21,25,26,27,31,32,33,34
 				<br> CCOOP / 42559 Entre le 1 et le 28,31,32,33,34 --> 
-    					<h1 align="center" style="text-decoration: underline">Liens Utiles pour les environnements</h1>
-					<TABLE align="center" border="2" width="700">
-					    <TR align="left">
+    					<h1 align="center » style="text-decoration: underline">Liens Utiles pour les environnements</h1>
+					<TABLE align="center » border="2 » width="700">
+					    <TR align="gauche">
 				        	    <TD width="30%"><b> Lien DEI en VFO : </b>
-					            <TD width="70%" align="left"> http://ind-ez-vfo-nginx.sigcesie.caisse-epargne.fr/particuliers
-					    <TR align="left">
+					            <TD width="70% » align="left"> http://ind-ez-vfo-nginx.sigcesie.caisse-epargne.fr/particuliers
+					    <TR align="gauche">
 					            <TD><b> Lien DEI en UTI : </b>
 					            <!--TD align="left"> https://www.ind-ez.uti.caisse-epargne.fr/particuliers -->
 						    <TD align="left"> https://www.val.caisse-epargne.fr ( Sur Environnement UTI)
-					    <TR align="left">
+					    <TR align="gauche">
 					            <TD><b> Lien DEEP Purple Web en UTI : </b>
 					            <TD align="left">https://www.recmoa.uti.caisse-epargne.fr/espace-client-beta/ 
 
-					    <TR align="left">
+					    <TR align="gauche">
 					            <TD><b> Lien DEI en QPA : </b>
 					            <TD align="left">https://www.icgauth-ppr.caisse-epargne.fr/se-connecter-beta/sso?service=dei 
-					    <TR align="left">
+					    <TR align="gauche">
 					            <TD><b> Lien DEI en UTI CCOOP : </b>
 					            <TD align="left"> https://www.cc-ez.uti.caisse-epargne.fr/Entreprises
-					    <TR align="left">
+					    <TR align="gauche">
 					            <TD><b> Lien DEI en UTI BTP : </b>
 					            <TD align="left">https://www.btp-ez.uti.caisse-epargne.fr/entreprises
-					    <TR align="left">
-					            <TD><b> Lien TOOL BOX : </b>
+					    <TR align="gauche">
+					            <TD><b> Boîte à outils de privilège : </b>
 					            <TD align="left"> http://pmmpres-dua.sigcesie.caisse-epargne.fr:8851/Gce.IHMOutilDevGED/V1.0/Web/BriqueMail/BriqueMail.aspx?sigle=MAIL
-					    <TR align="left">
+					    <TR align="gauche">
 					            <TD><b>Mode opératoire Expéritest (téléphone et tablette): </b>
-					            <TD align="left"><a href="https://teams.microsoft.com/l/file/5DE4BC18-58C8-4D93-A076-45FF38CF5B11?tenantId=d5bb6d35-8a82-4329-b49a-5030bd6497ab&fileType=docx&objectUrl=https%3A%2F%2Fgroupebpce.sharepoint.com%2Fsites%2FProjetMOA%2FShared%20Documents%2FGeneral%2FRecette%2Fmode%20operatoire%20experitest.docx&baseUrl=https%3A%2F%2Fgroupebpce.sharepoint.com%2Fsites%2FProjetMOA&serviceName=teams&threadId=19:de4550f1909f466eb9e1ac192d717bd9@thread.skype&groupId=2af4d4b5-843d-4f90-8750-00db598f3fec" target="_blank">  Mode opératoire  <a href="https://confluence.f.bbg/pages/viewpage.action?pageId=1213302986" target="_blank"> <br> Tout savoir sur Expéritest 
+					            <TD align="left"><a href= » https://teams.microsoft.com/l/file/5DE4BC18-58C8-4D93-A076-45FF38CF5B11?tenantId=d5bb6d35-8a82-4329-b49a-5030bd6497ab&fileType=docx&objectUrl=https%3A%2F%2Fgroupebpce.sharepoint.com%2Fsites%2FProjetMOA%2FShared%20Documents%2FGeneral%2FRecette%2Fmode%20operatoire%20experitest.docx&baseUrl=https%3A%2F%2Fgroupebpce.sharepoint.com%2Fsites%2FProjetMOA&serviceName=teams&threadId=19:de4550f1909f466eb9e1ac192d717bd9@thread.skype&groupId=2af4d4b5-843d-4f90-8750-00db598f3fec « target="_blank"> Mode opératoire <a href="https://confluence.f.bbg/pages/viewpage.action?pageId=1213302986 » target="_blank"> <br> Tout savoir sur Expéritest 
  
 
 						    	
@@ -711,7 +297,7 @@
 		<!--div class="div2"><a href="https://portail-webdesktop.sigce.caisse-epargne.fr/WebDesktop/Internes/site/default.aspx" target="_blank">
 			<img src="images/portable.jpg" class="w3-round-xlarge a1" alt="Norway" title="Code guichet:2002851" style=""></a></div-->
 		<div class="div2"><a href="https://portail-front-int.hpr.intra.bpce-it.fr/VirtualAPP/MYS_Zone/" target="_blank">
-			<img src="images/téléchargement.png" class="w3-round-xlarge a1" alt="Norway" title="Liste Guichet UTI
+			<img src="téléchargement.png" class="w3-round-xlarge a1" alt="Norway" title="Liste Guichet UTI
 CEBPL	/ 14445		333804 	ou	358902
 CEHDF	/ 16275		5960100	ou	5960200
 CERA  	/ 13825		3011401	ou	3017301
@@ -720,7 +306,6 @@ CEIDF	/ 17515		333405	ou	371510
 CEPAC	/ 11315		12301	ou	12401
 CEN 	/ 11425		1428101	ou	1428201
 CELC	/ 14505		323600	ou	327000
-
 CFF 	/ 43199		8270251	ou	3440021
 SCF 	/ 30051		4301011	ou	8270252
 BTP 	/ 30258		6,7, 11,13,15,16,17,18
@@ -730,6 +315,9 @@ CCOOP	/ 42559		Entre le 1 et le 28
 										
 "></a></div>
 
+
+
+
 		<div class="div2"><a target="_blank"><img src="liste.png" class="w3-round-xlarge a1" alt="" onMouseOver="this.style.cursor='pointer'" onclick="document.getElementById('Utile').style.display='block'"></a></div>
 		<div class="div2"><a target="_blank" href="file://FSBFCACT/Activites/BFC%20ESP%20VERSION%20MYSYS%20ACT/MySys_Recette%20en%20caisse%20UTI/"
 			 target=""><img src="test.jpg" class="w3-round-xlarge a1" alt="" style=""></a></div>
@@ -738,350 +326,33 @@ CCOOP	/ 42559		Entre le 1 et le 28
 		<div class="div2"><a href="https://almqc-ipxb-cetra.prd.mycloud.intrabpce.fr/qcbin/start_a.jsp" target="_blank"><img src="ALMQC.jpg" class="w3-round-xlarge a1" alt=""></a></div>
 
 		<div class="div2"><a href="http://service-itce-sps.sigce.caisse-epargne.fr/sites/col-activites/mts/PilRecette/alm_qc/Valise%20Recette/Valise%20Recette.htm"
-			  target="_blank"><img src="valise.JPG" class="w3-round-xlarge a1" alt=""></a></div>
+			  target="_blank"><img src="valise.jpg" class="w3-round-xlarge a1" alt=""></a></div>
 		<div class="div2"><a href="https://spshib-pro.extrapro.caisse-epargne.fr/hubvision/" target="_blank"><img src="HubVision.png" class="w3-round-xlarge a1" alt=""></a></div>
 		<div class="div2"><a href="http://mybooking.dom000.prdinf/" target="_blank"><img src="Bookin.png" class="w3-round-xlarge a1" alt="" style="height: 60px"></a></div>
-		<div class="div2"><a href="https://ria-ipxb-cetra.prd.mycloud.intrabpce.fr" target="_blank"><img src="RIA.JPG" class="w3-round-xlarge a1" alt=""></a></div>
+		<div class="div2"><a href="https://ria-ipxb-cetra.prd.mycloud.intrabpce.fr" target="_blank"><img src="RIA.jpg" class="w3-round-xlarge a1" alt=""></a></div>
 		<div class="div2"><a href="https://groupebpce.sharepoint.com/:x:/r/sites/CEBFC-DpartementMOA/Shared%20Documents/General/Moa/Suivi/Suivi%20Activit%C3%A9%20MOA%202022.xlsx?d=w77ff79a96b6c4fd390167a4220888495&csf=1&web=1&e=dfo792"
-			 target="_iexplorer.exe"><img src="planningMOA.jpg" class="w3-round-xlarge a1" alt=""></a></div>
-		<div class="div2"><a href="https://cebfc.suiteprog.com/mvc/" target="_blank"><img src="SuitePro-G.png" class="w3-round-xlarge a1" alt=""></a></div>
-			<div class="div2"><a href="https://w2kpig.cebfc.caisse-epargne.fr/pmadison/EM/TransportsItineraires/index_OK.html" target="_blank"><img src="selectour.jpg" class="w3-round-xlarge a1" alt=""></a></div>
-			<div class="div2"><a href="https://cebp.mappingcontrol.com/" target="_blank"><img src="voiture.png" class="w3-round-xlarge a1" alt=""></a></div>
-			<div class="div2"><a href="https://cebfc.carlabella.com/carladjvp/ssoproxy?sso=10&project=CEBFC" target="_blank"><img src="carla.JPG" class="w3-round-xlarge a1" alt=""></a></div>
-			<div class="div2"><a href="https://bpceit.service-now.com/pulse/" target="_blank"><img src="Pulse.jpg" class="w3-round-xlarge a1" alt=""></a></div>
-			<!--div class="div2"><a href="http://bpceit.service-now.com/" target="_blank"><img src="Snow.JPG" class="w3-round-xlarge a1" alt=""></a></div-->
-			<div class="div2"><a href="https://confluence.f.bbg/#recently-viewed" target="_blank"><img src="CONFLUENCE.jpg" class="w3-round-xlarge a1" alt=""></a></div>
-			<div class="div2"><a href="https://jira.f.bbg/secure/Dashboard.jspa" target="_blank"><img src="jira.png" class="w3-round-large a1" alt=""></a></div>
+			 target="_iexplorer.exe"><img src="planningMOA.jpg » class="w3-round-xlarge a1 » alt=""></a></div>
+		<div class="div2"><a href="https://cebfc.suiteprog.com/mvc/ » target="_blank"><img src="SuitePro-G.png » class="w3-round-xlarge a1 » alt=""></a></div >
+			<div class="div2"><a href="https://w2kpig.cebfc.caisse-epargne.fr/pmadison/EM/TransportsItineraires/index_OK.html » target="_blank"><img src="selectour.jpg » class="w3-round-xlarge a1 » alt=""></a ></div>
+			<div class="div2"><a href="https://cebp.mappingcontrol.com/ » target="_blank"><img src="voiture.png » class="w3-round-xlarge a1 » alt=""></a></div >
+			<div class="div2"><a href="https://cebfc.carlabella.com/carladjvp/ssoproxy?sso=10&project=CEBFC » target="_blank"><img src="carla.jpg » class="w3-round-xlarge a1 » alt=""></a> </div>
+			<div class="div2"><a href="https://bpceit.service-now.com/pulse/ » target="_blank"><img src="Pulse.jpg » class="w3-round-xlarge a1 » alt=""></a></div >
+			<!--div class="div2"><a href="http://bpceit.service-now.com/ » target="_blank"><img src="Snow.JPG » class="w3-round-xlarge a1 » alt=""></a></div-->
+			<div class="div2"><a href="https://confluence.f.bbg/#recently-viewed » target="_blank"><img src="CONFLUENCE.jpg » class="w3-round-xlarge a1 » alt=""></a></ Div>
+			<div class="div2"><a href="https://jira.f.bbg/secure/Dashboard.jspa » target="_blank"><img src="jira.png » class="w3-round-large a1 » alt=""></a></div >
 
 		</div>
+		
+		<br>
+		<a href="file://fsbfcact/Activites/BFC%20ESP%20VERSION%20MYSYS%20ACT/MySys_Recette%20en%20caisse%20UTI/">clique ici</a>
+		<a name= » ancre"></a>     
+		<h2> l’ancre </h2>
+							    
+							    <br>
+		<a href="fsbfcact/Activites/BFC%20ESP%20VERSION%20MYSYS%20ACT/MySys_Recette%20en%20caisse%20UTI/">clique ici</a>
+							    
+							    
+							    
 		<!-- Fin Favoris -->
 		<!-- Menu + corps de page -->
-		<div class="principale">
-			<!-- Menu -->
-			<div class="menu">
-				<ul>
-					<!--<li><a href=""><span class="fa fa-info"></span>Infos du moment</a>
-					<ul>
-						<li><a target="_blank" href="http://w28iis.cebfc.caisse-epargne.fr/pmadison/dtti/MOA/Organisation ITCE/Focus Organigramme des DSM.pdf"
-							 onclick="clickCounter()"><span class="fa fa-sitemap"></span>Focus Organisation des DSM</a></li>
-						<li><a target="_blank" href="http://w28iis.cebfc.caisse-epargne.fr/pmadison/dtti/MOA/Organisation ITCE/Focus Produit et ASSET.pdf"
-							 onclick="clickCounter()"><span class="fa fa-product-hunt"></span>Focus Produit et ASSET</a></li>
-						<li><a target="_blank" href="http://w28iis.cebfc.caisse-epargne.fr/pmadison/dtti/MOA/Organisation ITCE/Focus Role Intervenant Projet.pdf"><span class="fa fa-user-tag"></span>Focus Role Intervenant Projet</a></li>
-						<li><a target="_blank" href="http://w28iis.cebfc.caisse-epargne.fr/pmadison/dtti/MOA/Organisation ITCE/Focus PO et POD.pdf"><span class="fa fa-user"></span>Focus PO Produit et Délégué</a></li>
-						<li><a target="_blank" href="http://w28iis.cebfc.caisse-epargne.fr/pmadison/dtti/MOA/Organisation ITCE/Focus Squad et Chapitre.pdf"><span class="fa fa-users"></span>Focus Squad et Chapitre</a></li>
-						<li><a target="_blank" href="http://w28iis.cebfc.caisse-epargne.fr/pmadison/dtti/MOA/Organisation ITCE/Focus CMTD.pdf"><span class="fa fa-eye"></span>Focus CMTD</a></li>
-						<li><a target="_blank" href="http://w28iis.cebfc.caisse-epargne.fr/pmadison/dtti/MOA/Organisation ITCE/Agilité à l'échelle  mode produit - cadre de référence.pdf"><span class="fa fa-bible"></span>Bible du Mode Produit</a></li>
-					</ul>
-				</li> -->
-					<li><a href="#"><span class="fa fa-link"></span>Accès Bureautique</a>
-						<ul>
-							<li><a target="internet" href="file://FSBFCACT/Entites/BFC%20DTTI%20MOA%20ETI/MOA%20PROJET/"><span class="fa fa-folder"></span>Dossier Service MOA</a></li-->
-							<li><a target="internet" href="file://fsgbcdvc.dom000.prdinf/Divers/RECETTES_UTI_1 DVC/"><span class="fa fa-book"></span>GCE Recettes</a></li>
-							<li><a target="_blank" href="https://groupebpce.sharepoint.com/_layouts/15/sharepoint.aspx?"><span class="fa fa-folder"></span>Accès Share Point</a></li>
-							<li><a target="_blank" href="https://www.office.com/?auth=2"><span class="fa fa-folder"></span>Accès Office 365 </a></li>
-							<li><a target="_blank" href="https://groupebpce.sharepoint.com/sites/PlateformedadoptionO365desChefsdeProjets"><span class="fa fa-book-open"></span>Share Point REC </a></li>
-						
-						</ul>
-						</li>
-						<!--li><a href="#"><span class="fa fa-qrcode"></span>Formation</a>
-					<ul>
-						<li><a target="_blank" href="https://bdigit.bpce.fr/#!/"><span class="fa fa-microphone"></span>B'Digit</a></li>
-						<li><a target="_blank" href="https://clickandlearn.bpce.fr/Directory/Login/Login.aspx?ReturnUrl=%2f"><span class="fa fa-headset"></span>Essenti@</a></li>
-						<li><a target="_blank" href="http://w2kpig.cebfc.caisse-epargne.fr/pmadison/dtti/MOA/Portail/documents/ParcoursAccueilContributeurs.pdf"><span class="fa fa-running"></span>Parcours contributueurs ITCE</a></li>
-					</ul>
-				</li-->
-						<!--li><a href="#"><span class="fa fa-user-cog"></span>Gestion Personnelle</a>
-					<ul>
-						<li class="li1"><a target="_blank" href="http://w2kpig.cebfc.caisse-epargne.fr/pmadison/ComInterne/LiensCultureNet/Services.html"><span class="fa fa-holly-berry"></span>Congés</a></li>
-						<li><a target="internet" href="file://FSBFCDOS/Dossiers/BFC DTTI Commun DOS/GESTION DIRECTION/CONGES - TAD - TELETRAVAIL/Planning_congés_TAD_Télétravail_DTTI_2021.xlsx"
-							 type="application/vnd.ms-excel"><span class="fa fa-file-pdf"></span>Suivi congés</a></li>
-					</ul>
-				</li-->
-						<li><a href="#"><span class="fa fa-screwdriver"></span>Pilotage</a>
-							<ul>
-								<li><a target="PilotagePIA" href="https://app.powerbi.com/groups/me/apps/145411fd-e7dc-475a-ac8c-24ebce3c0faf/reports/a6a25d33-f884-4b96-9b2c-20d3bf1d1c7f/ReportSectionf69d903e70dd04ddb210"><span class="fa fa-hdd"></span>Pilotage PIA</a></li>
-								<li><a target="Pilotage" href="https://w28iis.cebourgogne.caisse-epargne.fr/cebfc/datalinks/app/#/home"><span class="fa fa-database"></span>DataLinks</a></li>
-								<!--li><a target="PilotagePIA" href="http://tableau.cebourgogne.caisse-epargne.fr/views/ActivitesMOA/TB4-ContributionsPIA?iframeSizedToWindow=true&%3Aembed=y&%3AshowAppBanner=false&%3Adisplay_count=no&%3AshowVizHome=no&%3Aorigin=viz_share_link#1">Pilotage PIA</a></li-->
-								<li><a target="Pilotage" href="http://bi4-prod.sigce.caisse-epargne.fr/BOE/BI"><span class="fa fa-table"></span>Accès Pilotage (BI4)</a></li>
-							</ul>
-						</li>
-						<li><a href="#"><span class="fa fa-user-circle"></span>RH</a>
-							<ul>
-								<li class="li1"><a target="_blank" href="https://groupebpce.sharepoint.com/:x:/r/sites/CEBFC-DTTI399/Shared%20Documents/General/Gestion%20des%20pr%C3%A9sences%20et%20cong%C3%A9s/Planning_cong%C3%A9s%20DTTI%202022.xlsx?d=w8856bf09ad2347299fef0df52909d6c8&csf=1&web=1&e=Ghb1eh"><span class="fa fa-info"></span> Suivi des Congés</a></li> 
-								<li class="li1"><a target="_blank" href="http://w2kpig.cebfc.caisse-epargne.fr/pmadison/ComInterne/LiensCultureNet/Services.html"><span class="fa fa-holly-berry"></span>Congés</a></li>
-								<li><a target="_blank" href="https://clickandlearn.bpce.fr/Directory/Login/Login.aspx?ReturnUrl=%2f"><span class="fa fa-headset"></span>Essenti@</a></li>
-								<li><a target="_blank" href="https://bdigit.bpce.fr/#!/"><span class="fa fa-microphone"></span>B'Digit</a></li>
-								<li class="li1"><a target="_blank" href="https://cecebfc.portailce.com/"><span class="fas fa-gifts"></span>Comité Entreprise (CSE) </a></li>
-								<li><a target="_blank" href="http://w2kpig.cebfc.caisse-epargne.fr/pmadison/EM/BasicRH/tt_teletravail.asp"><span class="fa fa-info"></span>Informations Télétravail</a></li>
-								<li><a target="_blank" href="http://w28iis.cebfc.caisse-epargne.fr/pmadison/dtti/MOA/portail/documents/Présentation RH télétravail pour diffusion.pdf"><span class="fa fa-people-arrows"></span>Modalité Télétravail</a></li>
-								<li><a target="_blank" href="http://w2kpig.cebfc.caisse-epargne.fr/pmadison/dtti/MOA/Portail/documents/ParcoursAccueilContributeurs.pdf"><span class="fa fa-running"></span>Parcours contributueurs ITCE</a></li>
-							</ul>
-						</li>
-						<li><a href="#"><span class="fa fa-shipping-fast"></span>Logistique</a>
-							<ul>
-								<li><a target="_blank"" href="http://w28iis.cebfc.caisse-epargne.fr/pmadison/EM/TransportsItineraires/documents/20180919- Politique voyage CEBFC V8.pdf"><span class="fa fa-euro-sign"></span>Politique des Frais de Remboursement</a></li>
-								<li><a target="_blank" href="https://groupebpce.sharepoint.com/:x:/r/sites/ProjetMOA/Shared%20Documents/General/Hotels/H%C3%B4tel%20Restaurants.xlsx?d=wfcb668bbf3e54ec1b690cbb293b92ab1&csf=1&web=1&e=qP6vuA"><span class="fa fa-hotel"></span>Avis Hôtel/Restaurant</a></li>
-								<li><a target="_blank"" href="http://service-itce-sps.sigce.caisse-epargne.fr/sites/met1/met/Contrib-Etabl/SitePages/Accueil.aspx?RootFolder=%2Fsites%2Fmet1%2Fmet%2FContrib%2DEtabl%2FDocuments%20partages%2FDocumentation%20de%20r%C3%A9f%C3%A9rence%2FInfos%20sites%20homologation&FolderCTID=0x012000F7572DA4E914E9429A56A65094BB42E9&View=%7BF478929B%2D64D1%2D4301%2D8794%2D0D5027B5185E%7D"><span class="fa fa-info"></span>Sites IT-CE</a></li>
-							</ul>
-						</li>
-						<li><a href="#"><span class="fa fa-desktop"></span>Projets</a>
-							<ul>
-								<li><a target="internet" href="file://fsbfcact/Activites/BFC ESP VERSION MYSYS ACT/DISPOSITIF VERSION.xlsx"><span class="fa fa-folder"></span>Postes et Agences Pilotes Versions CEBFC </a></li-->
-								<li><a target="_blank" href="http://w28iis.cebfc.caisse-epargne.fr/pmadison/dtti/MOA/portail/documents/webinars.pdf"><span class="fa fa-blog"></span>Bibliothèques et Replay Webinars</a></li>
-								<li><a target="_blank" href="https://confluence.b.bbg/display/METGRP/Bienvenue+dans+le+portail+TEMPO"><span class="fa fa-bolt"></span>TEMPO</a></li>
-								<li><a target="_blank" href="https://confluence.f.bbg/pages/viewpage.action?pageId=668237957"><span class="fa fa-product-hunt"></span>Méthode Produit : Confluence, Jira, ALMQC</a></li>
-								<li><a target="_blank" href="https://www.youtube.com/watch?v=3qMpB-UH9kA"><span class="fa fa-video"></span>Vidéo Agilité</a></li>
-								<li><a target="_blank" href="https://confluence.f.bbg/display/METGRP/Acteurs+du+projet"><span class="fa fa-industry"></span>Acteurs du Projet</a></li>
-								<li><a target="_blank" href="https://groupebpce.sharepoint.com/sites/CE_Digital"><span class="fa fa-blog"></span>Portail Projets Digitaux</a></li>
-							</ul>
-						</li>
-						<li><a href="#"><span class="fa fa-database"></span>Base Documentaire</a>
-							<ul>
-								<li><a target="_blank" href="http://service-itce-sps.sigce.caisse-epargne.fr/sites/mydoc/Pages/Accueil.aspx"><span class="fa fa-file"></span>MyDoc</a></li>
-								<li><a target="_blank" href="http://service-itce-sps.sigce.caisse-epargne.fr/sites/arc-esp-ref/prj/default.aspx"><span class="fa fa-file-archive"></span>Accès RDSI</a></li>
-								<li><a target="_blank" href="http://service-itce-sps.sigce.caisse-epargne.fr/sites/ref-docit/default.aspx"><span class="fa fa-wifi"></span>Accès Doc Net</a></li>
-								<li><a target="_blank" href="http://service-itce-sps.sigce.caisse-epargne.fr/sites/ref-solp/modeles/mdl/Forms/par_Trigramme.aspx"><span class="fa fa-file-alt"></span>Modèle Documents</a></li>
-								<li><a target="_blank" href="https://notifit-nft-bit.f.bbg/"><span class="fa fa-bell"></span>Notif'IT</a></li>
-								<li><a target="_blank" href="http://bpsi-pro.sigce.caisse-epargne.fr/acces.php?liste=domaine"><span class="fa fa-align-justify"></span>BPSI</a></li>
-
-							</ul>
-						</li>
-						<li><a href="#"><span class="fa fa-youtube"></span>Tutoriels</a>
-							<ul>
-								<li><a target="" href="\\FSBFCETI\Entites\BFC DTTI MOA ETI\_GestionDépt\Service MOA\Guide du Routard\Outlook Ajout de BAL Générique.docx"><span class="fa fa-futbol"></span>Gérer Bal Générique</a></li>
-								<li><a target="_blank" href="http://w2kpig.cebfc.caisse-epargne.fr/pmadison/EM/DTTI/Matériel%20mobile/guide_utilisateur/index.html"><span class="fa fa-taxi"></span>Tout Savoir sur la Mobilité</a></li>
-								<li><a target="_blank" href="http://w2kpig.cebfc.caisse-epargne.fr/pmadison/dtti/MOA/Portail/documents/distance.pdf"><span class="fa fa-laptop"></span>Accéder à un poste à distance</a></li>
-								<li><a target="_blank" href="https://groupebpce.sharepoint.com/sites/office-365/SitePages/Bonnes-pratiques-O365.aspx"><span class="fa fa-laptop"></span>Astuces Office 365</a></li>
-							</ul>
-						</li>
-
-
-				</ul>
-			</div>
-			<!--
-		<p id="result"></p>
-		<a href="#" onclick="resetCounter()">Remettre à 0 le compteur</a>
-
-		<script>
-			function clickCounter() {
-				var count = localStorage.clickcount = Number(localStorage.clickcount) + 1;
-				if (isNaN(count) === true) {
-					count = localStorage.clickcount = 1;
-					document.getElementById("result").innerHTML = count;
-				} else {
-					document.getElementById("result").innerHTML = count;
-				}
-
-				function resetCounter() {
-					var reset = localStorage.clickcount = 0;
-					document.getElementById("result").innerHTML = reset;
-				}
-			}
-		</script>
-		-->
-
-			</ul>
-			</li>
-			</ul>
-
-		</div>
-		<!-- Fin Menu -->
-		<p style="float:left; margin-left:10px;font-size: xx-small">Version 5.4 (22/04/2022)</p>
-		<!-- corps de page -->
-		<div class="corps">
-			<iframe class="frame" id=".frame" NAME="internet" src="http://pmmpresentation-pro.sigce.caisse-epargne.fr:8851/Gce.CultureNet.Web/Pages/nav.aspx?action=MonEntreprise"
-			 style="left: 0px; top: 0px;" border="none" frameborder="0" marginheight="0" marginwidth="0">
-				</frame>
-		</div>
-		<!-- Fin corps de page -->
-	</div>
-	<!-- Fin Menu + corps de page -->
-
-</body>
-
-</html>
-
-
-<!--
-
-
-Version 5.4 du 22/04/2022.
-Remise à jour des comptes à rebours (décompte version)
-
-Version 5.3 du 15/02/2022.
-Remise à jour des comptes à rebours (décompte version)
-Correction de quelques Bug 
-
-
-Version 5.2 du 24/10/2021.
-Ajout des webinars dans l'item Projet
-Bienvenue à Valérie
-Modifications des versions + calendriers 2022
-
-Version 5.1 du 14/10/2021.
-Mise à disposition du mode opératoire Expéritest (Mobile et Tablette ) 
-Rajout du lien Deep Purple Web sur UTI
-Modification du lien pour l'accès au DEI sur UTI
-
-Version 5.0 du 04/08/2021.
-Vérification du Navigateur
-L'ensemble des liens, même bureautique est opérationnel depuis EDGE ou IE ( KO pour Chrome ) 
-Refonte de la page Guichet et Liens pour faire des recettes 
-
-Version 4.9 du 28/07/2021
-Rajout site CSE
-Refonte Ergonomie Site
-
-
-Version 4.7 du 02/04/2021
-Mise à jour des calendriers des versions   
-Mise à jour du site Snow pour déclarer les incidents, les demandes de paramétrage, les demandes d'évolutions 
-Mise à du tableau de pilotage avec POWER BI (Onglet Pilotage) 
-
-Version 4.6 du 22/02/2021
-Rajout du lien DataLinks dans Onglet Pilotage  
-
-Version 4.5 du 19/02/2021
-Mise à jour du décompte de version
-
-Version 4.4 du 02/12/2020 
-Ajout de l'onglet Information du Moment
-Ajout de l'onglet Ressources Humaines
-
-
-Version 4.0 du 06/04/2020
-Mise à jour du décompte de version<br />
-Mise à jour du lien pour accéder à la nouvelle plateforme CITRIX<br />
-
-
-Version 3.9 du 18/02/2020	
-Mise à jour du décompte de version
-Ajout du lien Myflow dans le totem pour faire les demandes d'habilitation  
-Ajout du lien sur le dans le totem du logiciel de suivi des projets (version Bac à Sable)
-Ajout du lien sur la politique de remboursement dans la rubrique logistique
-Rajout lien ancien annuraire CEBFC 
-Rajout lien accès bureautique pour faire les recettes 
-
-
-Version 3.8 du 02/01/2020
-Mise à jour du décompte de version
-Ajout de Bruno AGELINI dans l'équipe MOA
-supression des suivis 2019 (MOA et congés)
-
-Version 3.7 du 02/12/2019
-Ajout d'un lien confluence sur la définition des différents acteurs d'un projet
-
-Version 3.6 du 29/11/2019
-Mise à jour du planning des versions pour 2020 et mise à jour des compteurs des versions V20.01.
-
-Version 3.5 du 15/11/2019
-Ajout d'une icone pour le suivi MOA 2020
-
-Version 3.4 du 15/10/2019
-Ajout du liens vers le Toolkit 89C3
-
-Version 3.3 du 14/10/2019
-Modification des fiches de ED
-Modification lien vers Selectour
-
-Version 3.2 du 08/10/2019
-Modification des fiches de ML, MM, LJ et FD
-
-Version 3.1 du 03/10/2019
-Modification des fiches de MK, BBR et AN
- 
-Version 3.0 du 10/09/2019
-Modification du lien des sites IT-CE
-Ajout du lien Notif'IT dans la rubrique Sites
-
-Version 2.9 du 20/08/2019
-Modification du lien vers Confluence
-Modification du lien vers JIRA
-Suppression du lien vers Qui fait quoi ITCE
-
-Version 2.8 du 13/06/2019
-MAJ des compteurs des futurs versions
-
-Version 2.7 du 02/05/2019
-MAJ du lien vers Mybooking
-
-Version 2.6 du 10/04/2019
-Ajout d'un raccourci pour le suivi des projets DTTI
-Modification du lien vers GCE RECETTES
-
-Version 2.5 du 04/02/2019
-Mise à jour du code pour w10
-Maj des compteurs versions
-
-Version 2.4 du 14/01/2019
-- Suppression du planning MOA 2018
-- Maj du lien de réservation des postes UTI CEBFC
-- Maj du lien du site pour la formation Tempo dans la rubrique Projets
-- Suppression du planning versin 2018 et ajout d'un accès aux jalons 2019 dans le bandeau supérieur
-- Ajout d'un fichier mentionnant l'ensemble des sites IT-CE dans la rubrique Logistique
-- Ajout d'un accès "Nouveautés" pour visualiser les modifications du portail  
-- Maj de la fiche de BBR
-- Maj de la version du suivi des congés
-
-Version 2.3 (07/12/2018)
--Ajout Qui fait quoi à ITCE dans le rubrique Base documentaire
-
-Version 2.2 (29/11/2018)
--Ajout d'un reload automatique du portail toute les 30 min
--Modification du compteur des versions
-
-Version 2.1 (16/11/2018)
-- Ajout d'un lien vers TEMPO dans la rubrique Projet
-
-Version 2.0 (09/11/2018)
-- modification de la fenetre d'ouverture du lien CDSI
-
-Version 1.9 (07/11/2018)
-- Ajout Lien DEI UTI pour le CCOOP et BTP
-
-Version 1.8 (29/10/2018)
--Ajout du suivi MOA 2019 dans la barre des favoris
-
-Version 1.7 (25/10/2018)
-- Ajout des information de PLB
-
-Version 1.6 (23/10/2018)
-- Ajout des information de ML
-
-Version 1.5 (18/10/2018)
-- Ajout d'un lien à la présentation de TEMPO dans le menu Formation
-
-Version 1.4 (12/10/2018)
-•	Ajout des informations FD
-
-Version 1.3 (02/10/2018)
-•	Ajout des informations ED
-
-Version 1.2 (01/10/2018)
-•	Ajout des informations BBR
-•	Ajout des informations AN
-
-Version 1.1 (24/09/2018)
-•	Ajout d’un Accès aux CDSI dans la rubrique « Base documentaire »
-•	Ajout du code guichet du poste nomade au survol de l’icône
-•	Ajout de l’accès au fichier Hôtel/restaurant dans la rubrique Logistique
-
-Version 1.0 (21/09/2018)
-•	Le bandeau supérieur a été réduit
-•	Modification icônes poste nomade
-•	Icônes Citrix et Postes UTI en CEBFC rapprochées
-•	Modification du titre menu «  Gestion personnelle… » en « Gestion personnelle »
-•	Suppression du raccourci vers le site de la SNCF
-•	Insertion de l’icône Booking-IT dans les favoris
-•	Suppression des favoris de l’accès CPMOA pour le mettre dans le menu de gauche dans « Projet »
-•	Modification du titre menu «  Définition projet » en « Projet »
-•	Déplacement de l’accès «  Comité…(CVPC) dans le menu « Projet » 
-•	Suppression d’un lien «  Accès maquette » dans le menu
-•	Le lien DEI est remonté en haut de la rubrique « Sites »
-•	Mise en place d’une fenêtre reprenant l’ensemble des liens DEI et Toolbox afin de pouvoir Copier/coller
-•	Ajout de l’accès à Myhorizon dans le menu « Projet »
-•	Déplacement de l’accès au Kit projet dans le menu « Projet »
-•	Déplacement de l’accès « Pourquoi la MOA ? » sous le bouton « L’équipe MOA projet »
-•	Modification du titre « Bureautique » en « Tutoriel » dans le menu
-•	Fusion des accès aux sites confluence en une icône
--->
+		
