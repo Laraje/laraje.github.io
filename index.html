@@ -1,5 +1,4 @@
-
- <!DOCTYPE html>
+ <! DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <tête>
@@ -90,18 +89,18 @@
  
 
 						    	
-					    <TR align="left">
-					            <TD><b>Lien Bureautique Recette : </b>
+					    <TR align="gauche">
+					            <TD><b>Lien Recette Bureautique : </b>
 					            <TD align="left">\\fsgbcdvc.dom000.prdinf\Divers\RECETTES_UTI_1 DVC 
 					    </TABLE>
-					<TABLE align="center" border="0" width="700">
+					<TABLE align="center » border="0 » width="700">
 					<TR>
 				        	    <TD width="100%"><b> * Deux possibilités de se connecter : soit avec votre user ou un user générique.
 					<TR>
-				        	    <TD width="100%"><b>  Votre user windows : CEBFC-GCE\A21XXXXX . Le mot de passe à renseigner est celui qui permet l'ouverture de votre
+				        	    <TD width="100%"><b> Votre user windows : CEBFC-GCE\A21XXXXX . Le mot de passe à renseigner est celui qui permet l’ouverture de votre
 							session windows sur votre poste de travail 
 					<TR>
-				        	    <TD width="100%"><b> User Générique :ITGCE\UTINANTES MDP:Recette$ 
+				        	    <TD width="100%"><b> Utilisateur Générique :ITGCE\UTINANTES MDP:Recette$ 
 					</TR>
 					</TABLE>
 				</p>	
@@ -109,65 +108,65 @@
 		</div>
 
 		<script>
-			// Get the modal
-			var modal = document.getElementById('Monequipe');
-			// Get the button that opens the modal
-			var btn = document.getElementById("equipe");
-			// Get the <span> element that closes the modal
-			var span = document.getElementsByClassName("close")[0];
-			// When the user clicks the button, open the modal 
-			btn.onclick = function () {
-				modal.style.display = "block";
+			Obtenir le modal
+			var modal = document. getElementById('Monequipe');
+			Obtenir le bouton qui ouvre le modal
+			var btn = document. getElementById(« equipe »);
+			Obtenir l’élément <span> qui ferme le modal
+			var span = document. getElementsByClassName(« fermer »)[0];
+			Lorsque l’utilisateur clique sur le bouton, ouvrez le modal 
+			btn. onclick = fonction () {
+				modal. style. display = « bloc »;
 			}
 
-			// When the user clicks on <span> (x), close the modal
-			span.onclick = function () {
-				modal.style.display = "none";
+			Lorsque l’utilisateur clique sur <span> (x), fermez le modal
+			portée. onclick = fonction () {
+				modal. style. display = « aucun »;
 			}
 
-			// When the user clicks anywhere outside of the modal, close it
-			window.onclick = function (event) {
-				if (event.target == modal) {
-					modal.style.display = "none";
+			Lorsque l’utilisateur clique n’importe où en dehors du modal, fermez-le
+			fenêtre. onclick = fonction (événement) {
+				si (événement. cible == modal) {
+					modal. style. display = « aucun »;
 				}
 			}
 		</script>
 
 
-		<!-- 1er decompte version
+		<!-- 1er version de décompte
 -->
 		<script type="text/javascript">
-			function compte_a_rebours() {
-				var compte_a_rebours = document.getElementById("compte_a_rebours0");
-				var date_actuelle = new Date();
-				var date_evenement = new Date("May 22 00:00:59 2022");					// variable à modifier
+			compte_a_rebours de fonction() {
+				var compte_a_rebours = document. getElementById(« compte_a_rebours0 »);
+				var date_actuelle = nouvelle date();
+				var date_evenement = new Date(« May 22 00:00:59 2022 »); // variable à modifier
 				var total_secondes = (date_evenement - date_actuelle) / 1000;
 
-				var prefixe = "Mise en Production V22.05 (22/05/2022) dans ";					// variable à modifier
-				if (total_secondes < 0) {
-					prefixe = "V22.05 livrée depuis ";   // On modifie le préfixe si la différence est négatif	 variable à modifier
-					prefixe = "";
-					total_secondes = Math.abs(total_secondes); 							// On ne garde que la valeur absolue
+				var prefixe = « Mise en Production V22.05 (22/05/2022) dans « ; // variable à modifier
+				si (total_secondes < 0) {
+					prefixe = « V22.05 livrée depuis « ; // On modifie le préfixe si la différence est négatif variable à modifier
+					préfixe = "";
+					total_secondes = Mathématiques. abs(total_secondes); // On ne garde que la valeur absolue
 				}
 
-				if (total_secondes > 0) {
-					var jours = Math.floor(total_secondes / (60 * 60 * 24));
-					var heures = Math.floor((total_secondes - (jours * 60 * 60 * 24)) / (60 * 60));
-					minutes = Math.floor((total_secondes - ((jours * 60 * 60 * 24 + heures * 60 * 60))) / 60);
-					secondes = Math.floor(total_secondes - ((jours * 60 * 60 * 24 + heures * 60 * 60 + minutes * 60)));
+				si (total_secondes > 0) {
+					var jours = Math. étage(total_secondes / (60 * 60 * 24));
+					var heures = Math. étage((total_secondes - (jours * 60 * 60 * 24)) / (60 * 60));
+					minutes = Mathématiques. étage((total_secondes - ((jours * 60 * 60 * 24 + heures * 60 * 60))) / 60);
+					secondes = Mathématiques. étage(total_secondes - ((jours * 60 * 60 * 24 + heures * 60 * 60 + minutes * 60)));
 
-					var et = "et";
-					var mot_jour = "jours";
-					var mot_heure = "heures,";
-					var mot_minute = "minutes,";
-					var mot_seconde = "secondes";
+					var et = « et »;
+					var mot_jour = « jours »;
+					var mot_heure = « heures »,;
+					var mot_minute = « minutes »,;
+					var mot_seconde = « secondes »;
 
 					if (jours == 0) {
 						jours = '';
 						mot_jour = '';
 					}
 					else if (jours == 1) {
-						mot_jour = "jour";
+						mot_jour = « jour »;
 					}
 
 					if (heures == 0) {
@@ -175,15 +174,15 @@
 						mot_heure = '';
 					}
 					else if (heures == 1) {
-						mot_heure = "heure,";
+						mot_heure = « heure »,;
 					}
 
 					if (minutes == 0) {
-						minutes = '';
+						compte-rendu = '';
 						mot_minute = '';
 					}
 					else if (minutes == 1) {
-						mot_minute = "minute,";
+						mot_minute = « minute »,;
 					}
 
 					if (secondes == 0) {
@@ -192,58 +191,58 @@
 						et = '';
 					}
 					else if (secondes == 1) {
-						mot_seconde = "seconde";
+						mot_seconde = « seconde »;
 					}
 
 					if (minutes == 0 && heures == 0 && jours == 0) {
 						et = "";
 					}
 
-					compte_a_rebours.innerHTML = prefixe + jours + ' ' + mot_jour;
+					compte_a_rebours. innerHTML = préfixe + jours + ' ' + mot_jour;
 				}
-				else {
-					compte_a_rebours.innerHTML = 'Compte à rebours terminé.';
+				autre {
+					compte_a_rebours. innerHTML = 'Compte à rebours terminé.';
 				}
 
-				var actualisation = setTimeout("compte_a_rebours();", 1000);
+				var actualisation = setTimeout(« compte_a_rebours(); » , 1000);
 			}
 			compte_a_rebours();
 		</script>
 
-		<!-- 2eme decompte version
+		<!-- version de décompte deme 2eme
 -->
 		<script type="text/javascript">
-			function compte_a_rebours() {
-				var compte_a_rebours = document.getElementById("compte_a_rebours");
+			compte_a_rebours de fonction() {
+				var compte_a_rebours = document. getElementById(« compte_a_rebours »);
 
-				var date_actuelle = new Date();
-				var date_evenement = new Date("September 18 00:00:59 2022");			// variable à modifier
+				var date_actuelle = nouvelle date();
+				var date_evenement = new Date(« September 18 00:00:59 2022 »); // variable à modifier
 				var total_secondes = (date_evenement - date_actuelle) / 1000;
 
-				var prefixe = "Mise en Production V22.09 (18/09/2022)  dans ";			// variable à modifier
-				if (total_secondes < 0) {
-					prefixe = "V22.09 livrée depuis "; // On modifie le préfixe si la différence est négatif  : Libelle à modifier 
-					total_secondes = Math.abs(total_secondes); // On ne garde que la valeur absolue
+				var prefixe = « Mise en Production V22.09 (18/09/2022) dans « ; // variable à modifier
+				si (total_secondes < 0) {
+					prefixe = « V22.09 livrée depuis « ; // On modifie le préfixe si la différence est négatif : Libelle à modifier 
+					total_secondes = Mathématiques. abs(total_secondes); // On ne garde que la valeur absolue
 				}
 
-				if (total_secondes > 0) {
-					var jours = Math.floor(total_secondes / (60 * 60 * 24));
-					var heures = Math.floor((total_secondes - (jours * 60 * 60 * 24)) / (60 * 60));
-					minutes = Math.floor((total_secondes - ((jours * 60 * 60 * 24 + heures * 60 * 60))) / 60);
-					secondes = Math.floor(total_secondes - ((jours * 60 * 60 * 24 + heures * 60 * 60 + minutes * 60)));
+				si (total_secondes > 0) {
+					var jours = Math. étage(total_secondes / (60 * 60 * 24));
+					var heures = Math. étage((total_secondes - (jours * 60 * 60 * 24)) / (60 * 60));
+					minutes = Mathématiques. étage((total_secondes - ((jours * 60 * 60 * 24 + heures * 60 * 60))) / 60);
+					secondes = Mathématiques. étage(total_secondes - ((jours * 60 * 60 * 24 + heures * 60 * 60 + minutes * 60)));
 
-					var et = "et";
-					var mot_jour = "jours";
-					var mot_heure = "heures,";
-					var mot_minute = "minutes,";
-					var mot_seconde = "secondes";
+					var et = « et »;
+					var mot_jour = « jours »;
+					var mot_heure = « heures »,;
+					var mot_minute = « minutes »,;
+					var mot_seconde = « secondes »;
 
 					if (jours == 0) {
 						jours = '';
 						mot_jour = '';
 					}
 					else if (jours == 1) {
-						mot_jour = "jour";
+						mot_jour = « jour »;
 					}
 
 					if (heures == 0) {
@@ -251,7 +250,7 @@
 						mot_heure = '';
 					}
 					else if (heures == 1) {
-						mot_heure = "heure,";
+						mot_heure = « heure »,;
 					}
 
 					if (minutes == 0) {
@@ -317,18 +316,18 @@ CCOOP	/ 42559		Entre le 1 et le 28
 
 
 
-		<div class="div2"><a target="_blank"><img src="liste.png" class="w3-round-xlarge a1" alt="" onMouseOver="this.style.cursor='pointer'" onclick="document.getElementById('Utile').style.display='block'"></a></div>
-		<div class="div2"><a target="_blank" href="file://FSBFCACT/Activites/BFC%20ESP%20VERSION%20MYSYS%20ACT/MySys_Recette%20en%20caisse%20UTI/"
-			 target=""><img src="test.jpg" class="w3-round-xlarge a1" alt="" style=""></a></div>
+		<div class="div2"><a target="_blank"><img src="liste.png » class="w3-round-xlarge a1 » alt=" » onMouseOver="this.style.cursor='pointer' » onclick="document.getElementById('Utile').style.display='block' » ></a></div>
+		<div class="div2"><a target="_blank » href="file://FSBFCACT/Activites/BFC%20ESP%20VERSION%20MYSYS%20ACT/MySys_Recette%20en%20caisse%20UTI/"
+			 target=""><img src="test.jpg » class="w3-round-xlarge a1 » alt=" » style=""></a></div>
 
-		<!--div class="div2"><a href="http://service-itce-almqcutili.sigce.caisse-epargne.fr:8080/qcbin/start_a.jsp" target="_blank"><img src="ALMQC.jpg" class="w3-round-xlarge a1" alt=""></a></div-->
-		<div class="div2"><a href="https://almqc-ipxb-cetra.prd.mycloud.intrabpce.fr/qcbin/start_a.jsp" target="_blank"><img src="ALMQC.jpg" class="w3-round-xlarge a1" alt=""></a></div>
+		<!--div class="div2"><a href="http://service-itce-almqcutili.sigce.caisse-epargne.fr:8080/qcbin/start_a.jsp » target="_blank"><img src="ALMQC.jpg » class="w3-round-xlarge a1 » alt=""></a></div-->
+		<div class="div2"><a href="https://almqc-ipxb-cetra.prd.mycloud.intrabpce.fr/qcbin/start_a.jsp » target="_blank"><img src="ALMQC.jpg » class="w3-round-xlarge a1 » alt=""></a> </div>
 
 		<div class="div2"><a href="http://service-itce-sps.sigce.caisse-epargne.fr/sites/col-activites/mts/PilRecette/alm_qc/Valise%20Recette/Valise%20Recette.htm"
-			  target="_blank"><img src="valise.jpg" class="w3-round-xlarge a1" alt=""></a></div>
-		<div class="div2"><a href="https://spshib-pro.extrapro.caisse-epargne.fr/hubvision/" target="_blank"><img src="HubVision.png" class="w3-round-xlarge a1" alt=""></a></div>
-		<div class="div2"><a href="http://mybooking.dom000.prdinf/" target="_blank"><img src="Bookin.png" class="w3-round-xlarge a1" alt="" style="height: 60px"></a></div>
-		<div class="div2"><a href="https://ria-ipxb-cetra.prd.mycloud.intrabpce.fr" target="_blank"><img src="RIA.jpg" class="w3-round-xlarge a1" alt=""></a></div>
+			  target="_blank"><img src="valise.jpg » class="w3-round-xlarge a1 » alt=""></a></div>
+		<div class="div2"><a href="https://spshib-pro.extrapro.caisse-epargne.fr/hubvision/ » target="_blank"><img src="HubVision.png » class="w3-round-xlarge a1 » alt=""></a> </div>
+		<div class="div2"><a href="http://mybooking.dom000.prdinf/ » target="_blank"><img src="Bookin.png » class="w3-round-xlarge a1 » alt=" » style="height: 60px"></a ></div>
+		<div class="div2"><a href="https://ria-ipxb-cetra.prd.mycloud.intrabpce.fr » target="_blank"><img src="RIA.jpg » class="w3-round-xlarge a1 » alt="></a></ Div>
 		<div class="div2"><a href="https://groupebpce.sharepoint.com/:x:/r/sites/CEBFC-DpartementMOA/Shared%20Documents/General/Moa/Suivi/Suivi%20Activit%C3%A9%20MOA%202022.xlsx?d=w77ff79a96b6c4fd390167a4220888495&csf=1&web=1&e=dfo792"
 			 target="_iexplorer.exe"><img src="planningMOA.jpg » class="w3-round-xlarge a1 » alt=""></a></div>
 		<div class="div2"><a href="https://cebfc.suiteprog.com/mvc/ » target="_blank"><img src="SuitePro-G.png » class="w3-round-xlarge a1 » alt=""></a></div >
@@ -341,11 +340,5 @@ CCOOP	/ 42559		Entre le 1 et le 28
 			<div class="div2"><a href="https://jira.f.bbg/secure/Dashboard.jspa » target="_blank"><img src="jira.png » class="w3-round-large a1 » alt=""></a></div >
 
 		</div>
-		
-	
-							    
-							    
-							    
 		<!-- Fin Favoris -->
 		<!-- Menu + corps de page -->
-		
